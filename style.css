@@ -155,3 +155,218 @@ header p {
 .voltar:hover {
   opacity: 0.8;
 }
+
+
+/* Estilização do perfil 2 (Júlia) */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primaria: #4f46e5;
+    --secudaria: #7c3aed;
+    --escuro: #0f172a;
+    --maisEscuro: #0a0f1c;
+    --claro: #e2e8f0;
+    --vidro: rgba(255,255,255,0.1);
+}
+
+body {
+    background-color: var(--escuro);
+    color: var(--claro);
+    overflow-x: hidden;
+}
+
+.navegacao {
+    position: fixed;
+    background: rgba(15, 23, 42, 0.8);
+    width: 100%;
+    z-index: 100;
+    padding: 24px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 48px;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: var(--claro);
+    font-weight: 500;
+    position: relative;
+    padding: 8px 0;
+}
+
+.menu-link::after {
+    content: '';
+    height: 2px;
+    width: 0%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg,var(--primaria),var(--secudaria));
+    transition: width 0.5s ease;
+}
+
+.menu-link:hover::after {
+    width: 100%;
+}
+
+.foto-perfil {
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 0 20px rgba(79, 70, 229, 0.3);
+    border-radius: 50%;
+    border: 4px solid var(--vidro);
+}
+
+.cabecalho {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 40px;
+    color: var(--primaria);
+    font-weight: bold;
+    margin: 20px;
+}
+
+.cabecalho-sub-titulo {
+    font-size: 20px;
+    color: var(--claro);
+}
+
+.sobre {
+    padding: 96px 32px;
+}
+
+.sobre-titulo {
+    font-size: 35px;
+    color: var(--claro);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sobre-caixa {
+    padding: 32px;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 16px;
+    border: 1px solid var(--vidro);
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.sobre-paragrafo {
+    text-align: center;
+    font-size: 18px;
+}
+
+.projetos, .contatos {
+    padding: 96px 32px;
+}
+
+.projetos-imagem {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.projetos-titulo, .contatos-titulo {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+
+.projetos-cards:hover {
+    box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);
+    transform: translateY(-10px) scale(1.03);
+}
+
+.projetos-caixa {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    gap: 32px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projetos-cards {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    border: 1px solid var(--vidro);
+    overflow: hidden;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    cursor: pointer;
+}
+
+.caixa-textos-projeto {
+    padding: 24px;
+}
+
+.paragrafo-projetos {
+    color: rgba(226, 232, 240, 0.8);
+    line-height: 1.25;
+}
+
+.info-projetos {
+    margin-bottom: 5px;
+}
+
+.formulario-contato {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    padding: 32px;
+    border: 1px solid var(--vidro);
+    border-radius: 16px;
+}
+
+.grupo-form {
+    margin-bottom: 24px;
+}
+
+.campo-form {
+    width: 100%;
+    padding: 16px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    border: 1px solid var(--vidro);
+    color: var(--claro);
+}
+
+.botao-form {
+    color: var(--claro);
+    background: linear-gradient(45deg,var(--primaria),var(--secudaria));
+    padding: 16px 32px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.botao-form:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px rgba(79, 70, 229, 0.4);
+}
