@@ -16,8 +16,6 @@ body {
 /* Header */
 header {
   padding: 20px;
-  background: linear-gradient(90deg, #ff2e88, #00d9ff);
-  color: white;
   box-shadow: 0 0 20px rgba(0, 217, 255, 0.4);
 }
 
@@ -27,7 +25,6 @@ header h1 {
 }
 
 header p {
-  color: #eee;
   font-size: 1rem;
 }
 
@@ -56,16 +53,31 @@ header p {
 }
 
 .card img {
-  width: 150px;              /* foto menor */
+  width: 150px;          
   height: 150px;
-  object-fit: cover;         /* corta e ajusta sem distorcer */
-  border-radius: 50%;        /* redonda */
-  border: 3px solid #ff2e88; /* borda neon rosa */
+  object-fit: cover;        
+  border-radius: 50%;        
+  border: 3px solid #ff2e88; 
   margin-bottom: 15px;
 }
 
 .card h2 {
   margin: 10px 0;
-  color: #00d9ff; /* azul neon */
+  color: #00d9ff; 
   font-size: 1.2rem;
+}
+
+.change-mode{
+  display: flex;
+  justify-content: end;
+}
+
+.change-color{
+  background-color: blue; 
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
