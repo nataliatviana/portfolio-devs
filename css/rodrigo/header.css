@@ -1,0 +1,29 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    background-color: #121212;
+    color: white;
+    padding: 1rem;
+
+}
+
+.header img {
+    height: 70px;
+    width: 80px;
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width:470px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}

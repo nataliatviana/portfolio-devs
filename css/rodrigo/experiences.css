@@ -1,0 +1,32 @@
+#experiences {
+    margin-top: 50px;
+    color: #1373D1;
+}
+
+.experience-block {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 650px;
+}
+
+.experience-info {
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    gap: 12px;
+    color: white;
+}
+
+
+.experience-description {
+    font-size: 15px;
+    color: lightgray;
+}
+
+.work-time {
+    color: lightgrey;
+    font-size: 12px
+}
