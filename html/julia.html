@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevClub Portifólio</title>
+    <title>Júlia</title>
     <link rel="stylesheet" href="/css/julia/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
 <body>
     <!--Menu de navegação-->
@@ -27,7 +29,7 @@
             </li>
 
             <li>
-                <a href="index.html" class="menu-link">Voltar</a>
+                <a href="/index.html" class="menu-link">Voltar</a>
             </li>
         </ul>
     </nav>
@@ -66,7 +68,7 @@
                 
 
             <!--Card sobre projeto 2-->
-             <div class="projetos-cards">
+            <div class="projetos-cards">
                 <img src="https://res.cloudinary.com/dw1n3x7uo/image/upload/v1756306304/pexels-picjumbo-com-55570-210647_lpjvtb.jpg" alt="Imagem de uma atendente" class="projetos-imagem">
                 <div class="caixa-textos-projeto">
                     <h3 class="info-projetos">Ouvidoria</h3>
@@ -87,22 +89,35 @@
             </div>
     </section>
 
+    <!--Seção de Contato-->
     <section id="contatos" class="contatos">
         <h2 class="contatos-titulo">Entre em contato</h2>
         <form class="formulario-contato" id="formulario">
         
         <div class="grupo-form">
-            <input placeholder="Nome" class="campo-form">
-         </div>
+            <input type="text" placeholder="Nome" class="campo-form" id="nome">
+        </div>
         
         <div class="grupo-form">
-            <textarea class="campo-form" placeholder="Digite sua mensagem"></textarea>
-         </div>
+            <textarea class="campo-form" placeholder="Digite sua mensagem" id="mensagem" rows="6"></textarea>
+        </div>
 
-         <button type="submit" class="botao-form">Enviar Mensagem</button>
+        <button type="submit" class="botao-form">Enviar Mensagem</button>
 
         </form>
     </section>
+
+    <footer class="rodape">
+        <div class="redes">
+            <a href="https://github.com/Juliahandrade" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+
+        <p>© 2025 - Júlia Henriques</p>
+    </footer>
+
+    <script src="/js/script.js"></script>
 
 </body>
 </html>

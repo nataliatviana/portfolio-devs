@@ -209,3 +209,28 @@ h1 {
     transform: translateY(-4px);
     box-shadow: 0 5px 15px rgba(79, 70, 229, 0.4);
 }
+
+
+.rodape {
+    text-align: center;
+    padding: 40px 20px;
+    background: rgba(79, 70, 229, 0.6);
+    color: var(--claro);
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.redes a {
+    color: var(--claro);
+    transition: 0.3s ease;
+}
+
+.redes a:hover {
+    transform: scale(1.2);
+}

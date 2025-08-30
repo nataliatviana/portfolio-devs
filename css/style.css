@@ -67,6 +67,10 @@ header p {
   font-size: 1.2rem;
 }
 
+.card a {
+  text-decoration: none;
+}
+
 .change-mode{
   display: flex;
   justify-content: end;
