@@ -85,3 +85,23 @@ header p {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 500px;
+  justify-content: center;
+  align-items: center;
+}
+
+.selection-section{
+  display: flex;
+  justify-content: center;
+}
+
+.connect{
+  padding: 10px;
+  border-radius: 10px;
+}
+
